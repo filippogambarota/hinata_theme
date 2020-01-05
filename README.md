@@ -1,6 +1,14 @@
 # Hinata Theme
 
-<iframe src="https://giphy.com/embed/qKr1nIRfIQPYI" width="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/naruto-shippuden-well-qKr1nIRfIQPYI">via GIPHY</a></p>
+<p align="center">
+<img src="img/hinata.gif" width="200" align= "middle" alt="">
+</p>
+
+<p align="center">
+<a href="https://giphy.com/gifs/naruto-shippuden-well-qKr1nIRfIQPYI/embed">via GIPHY</a>
+</p>
+
+</br>
 
 This is a theme for the **Xaringan** R Package based on the **Remark.js** library. The customization is inspired by:
 * The `Hinata` character of Naruto :smile:
