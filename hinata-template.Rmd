@@ -1,0 +1,74 @@
+---
+title: "Awesome Title"
+author: "Hinata Hyūga"
+institute: "Konoha"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["css/hinata.css", "css/hinata-fonts.css"]
+    lib_dir: libs
+    nature:
+      beforeInit: "macro.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: inverse, center, middle
+
+# Section slide
+
+---
+
+# Hinata Theme
+
+This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)<sup>*</sup> that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
+
+```{r, fig.align='center', out.width="50%", echo=FALSE}
+knitr::include_graphics("img/hinata.png")
+```
+
+.footnote[[1] Image Credit: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
+
+---
+
+class: inverse, center, middle
+
+# Some Hinata Customization
+
+<iframe src="https://giphy.com/embed/qKr1nIRfIQPYI" width="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> <p><a href="https://giphy.com/gifs/naruto-shippuden-well-qKr1nIRfIQPYI">via GIPHY</a></p>
+
+---
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+This is some inline code `set.seed(10)` and this is a **codeblock**:
+
+```{r pressure, echo=FALSE, fig.width=100}
+plot(pressure)
+```
+
+You can also highlight some code using `*` before the code line:
+
+```{r}
+set.seed(10)
+{{print("hello world")}}
+```
+
+---
+
+# Custom CSS Classes
+
+You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
+
+There is a **final-slide** class for the last slide of the presentation
+
+There is a **section** class for slide diveder between presentation sections (like the second slide)

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Awesome Title</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Hinata Hyūga" />
+    <meta name="date" content="2020-01-05" />
+    <link rel="stylesheet" href="css\hinata.css" type="text/css" />
+    <link rel="stylesheet" href="css\hinata-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Awesome Title
+### Hinata Hyūga
+### Konoha
+### 2020-01-05
+
+---
+
+
+
+
+class: inverse, center, middle
+
+# Section slide
+
+---
+
+# Hinata Theme
+
+This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)&lt;sup&gt;*&lt;/sup&gt; that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
+
+&lt;img src="img/hinata.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+.footnote[[1] Image Credit: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
+
+---
+
+class: inverse, center, middle
+
+# Some Hinata Customization
+
+&lt;iframe src="https://giphy.com/embed/qKr1nIRfIQPYI" width="350" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://giphy.com/gifs/naruto-shippuden-well-qKr1nIRfIQPYI"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+---
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+This is some inline code `set.seed(10)` and this is a **codeblock**:
+
+![](hinata-template_files/figure-html/pressure-1.png)&lt;!-- --&gt;
+
+You can also highlight some code using `*` before the code line:
+
+
+```r
+set.seed(10)
+*print("hello world")
+```
+
+```
+## [1] "hello world"
+```
+
+---
+
+# Custom CSS Classes
+
+You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
+
+There is a **final-slide** class for the last slide of the presentation
+
+There is a **section** class for slide diveder between presentation sections (like the second slide)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macro.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
