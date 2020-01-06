@@ -1,3 +1,5 @@
+/* Default Theme */
+
 a,
 a > code {
   color: rgb(249, 38, 114);
@@ -81,12 +83,17 @@ td {
   }
 }
 
+
+
+/* Hinata Customizations */
+
 /* Title Slide */
+/* Thanks to @jvcasillas of Rutgers Theme */
 
 .title-slide {
-  background-image: url("../img/hinata.png");
-  background-size: 150px;
-  background-position: 10% 20%;
+  /*background-image: url(""); /* delete comments and insert link of yours image
+    background-size: 150px;
+    background-position: 10% 20%; */
   background-color: rgb(230, 230, 230);
   color: #000000;
   text-shadow: none;
@@ -95,12 +102,12 @@ td {
 /* H1 fonts */
 .title-slide h1 {
   color: rgb(50, 53, 85);
-  padding-top: 200px;
+  padding-top: 100px;
   font-weight: bold;
   font-size: 50px;
   text-align: middle;
   text-shadow: none;
-  padding-bottom: 18px;
+  padding-bottom: 80px;
   margin-bottom: 18px;
 }
 
@@ -138,11 +145,13 @@ td {
 
 /* Standard Slides */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: rgb(100, 105, 165);
 }
 
-body{
+body {
   line-height: 25px;
 }
 
@@ -162,7 +171,7 @@ body{
 
 /* Final Slide */
 
-.final-slide{
+.final-slide {
   background-image: url("../img/final_logo.svg");
   background-size: 250px;
   background-position: 50% 90%;
@@ -171,63 +180,70 @@ body{
   text-shadow: 0 0 20px #333;
 }
 
-.final-slide h1, .final-slide h2, .final-slide h3 {
+.final-slide h1,
+.final-slide h2,
+.final-slide h3 {
   color: #f3f3f3;
 }
 
 /* Custom Classes for Text */
 
-.important{
+.important {
   color: #da0622;
   font-weight: bold;
 }
 
-.blue{
+.blue {
   color: rgb(36, 36, 207);
   font-weight: bold;
 }
 
+/* Thanks to @yihui https://github.com/yihui/xaringan/wiki/Font-Size*/
+
 .large {
-  font-size: 130%
+  font-size: 130%;
 }
-.small { 
-  font-size: 70% 
+.small {
+  font-size: 70%;
 }
 
 .huge {
-  font-size: 200%
+  font-size: 200%;
 }
 
-/* Thanks to Metropolis Theme for the snippet https://github.com/gnab/remark/issues/298 */
+/* Thanks to @pat-s (Metropolis Theme) for the snippet https://github.com/gnab/remark/issues/298 */
 .title-slide .remark-slide-number {
   display: none;
 }
 
 /* Code Blocks Background */
-/* Thanks to issue #242 https://github.com/yihui/xaringan/issues/242 */
-
-code.remark-code, code.hljs.remark-code {
+/* Thanks to @pat-s, @mschilli87 issue #242 https://github.com/yihui/xaringan/issues/242 */
+/* Thanks to @dashed for the basic code https://gist.github.com/dashed/6714393 */
+code.remark-code,
+code.hljs.remark-code {
   font-size: medium;
   display: block;
   overflow-x: auto;
-  padding: .5em;
+  padding: 0.5em;
   color: rgb(32, 32, 32);
   background: #dbdbdb67;
   border: 0.5px solid rgba(160, 160, 160, 0.534);
+  border-radius: 3px;
 }
 
-code.remark-inline-code{
+code.remark-inline-code {
   padding: 3px;
   color: rgb(32, 32, 32);
   background: #e2e2e267;
   border: 0.5px solid rgba(160, 160, 160, 0.534);
   font-size: medium;
+  border-radius: 3px;
 }
 
-.remark-code-line{
+.remark-code-line {
   line-height: 20px;
 }
 
-li{
+li {
   line-height: 35px;
 }
