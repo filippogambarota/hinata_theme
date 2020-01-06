@@ -5,7 +5,7 @@ institute: "Konoha"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["css/hinata.css", "css/hinata-fonts.css"]
+    css: ["css/hinata.css", default-fonts]
     lib_dir: libs
     nature:
       beforeInit: "macro.js"
