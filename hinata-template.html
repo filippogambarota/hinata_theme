@@ -4,7 +4,7 @@
     <title>Awesome Title</title>
     <meta charset="utf-8" />
     <meta name="author" content="Hinata Hyūga" />
-    <meta name="date" content="2020-01-05" />
+    <meta name="date" content="2020-01-06" />
     <link rel="stylesheet" href="css\hinata.css" type="text/css" />
     <link rel="stylesheet" href="css\hinata-fonts.css" type="text/css" />
   </head>
@@ -15,14 +15,14 @@ class: center, middle, inverse, title-slide
 # Awesome Title
 ### Hinata Hyūga
 ### Konoha
-### 2020-01-05
+### 2020-01-06
 
 ---
 
 
 
 
-class: inverse, center, middle
+class: section, center, middle
 
 # Section slide
 
@@ -30,15 +30,15 @@ class: inverse, center, middle
 
 # Hinata Theme
 
-This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)&lt;sup&gt;*&lt;/sup&gt; that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
+This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)&lt;sup&gt;1&lt;/sup&gt; that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
 
-&lt;img src="img/hinata.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/hinata.png" width="40%" style="display: block; margin: auto;" /&gt;
 
-.footnote[[1] Image Credit: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
+.footnote[[1] Image Credits: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
 
 ---
 
-class: inverse, center, middle
+class: section, center, middle
 
 # Some Hinata Customization
 
@@ -52,37 +52,109 @@ class: inverse, center, middle
 
 ### Header 3
 
-This is some inline code `set.seed(10)` and this is a **codeblock**:
+&lt;/br&gt;
+&lt;/br&gt;
 
-![](hinata-template_files/figure-html/pressure-1.png)&lt;!-- --&gt;
+# Title Slide
 
-You can also highlight some code using `*` before the code line:
+There is a `title-slide` CSS class that create the **first slide** of this presentation. The *Hinata* picture can be substituted or deleted inside the `css` file.
 
+# Final Slide
 
-```r
-set.seed(10)
-*print("hello world")
-```
-
-```
-## [1] "hello world"
-```
+There is also a `final-slide` CSS class that create the last slide with some hex logos.
 
 ---
 
-# Custom CSS Classes
+# Code Blocks
 
-You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
+This is some inline code `set.seed(10)` and this is a **plot**:
 
-There is a **final-slide** class for the last slide of the presentation
+&lt;img src="hinata-template_files/figure-html/pressure-1.png" style="display: block; margin: auto;" /&gt;
 
-There is a **section** class for slide diveder between presentation sections (like the second slide)
+---
+
+# Some Tips
+
+
+.pull-left[
+An example using a leading `*`:
+
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+````
+```{r tidy=FALSE}
+if (TRUE) {
+*{{ message("Very important!") }}
+}
+```
+````
+Output:
+
+```r
+if (TRUE) {
+* message("Very important!") 
+}
+```
+
+```
+## Very important!
+```
+
+It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+]
+
+---
+
+# Text Customization
+
+* You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
+* You can also write in .blue[blue] using the `.blue[some text]` class
+
+* This is a link [Google](https://www.google.com/)
+
+## Text Size
+
+* You can use `.small[text]` for .small[text], `.large[text]` for .large[text] and finally `.huge[text]` for .huge[text]
+
+---
+class: center, middle, final-slide
+
+# Thanks 😄
+
+&lt;/br&gt;
+&lt;/br&gt;
+.large[[**hinata.hyūga@konoha.com**](mailto:hinata.hyūga@konoha.com)]
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="macro.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
+"ratio": "16:9",
 "highlightLines": true,
 "countIncrementalSlides": false
 });

@@ -10,6 +10,7 @@ output:
     nature:
       beforeInit: "macro.js"
       highlightStyle: github
+      ratio: 16:9
       highlightLines: true
       countIncrementalSlides: false
 ---
@@ -18,7 +19,7 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-class: inverse, center, middle
+class: section, center, middle
 
 # Section slide
 
@@ -26,17 +27,17 @@ class: inverse, center, middle
 
 # Hinata Theme
 
-This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)<sup>*</sup> that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
+This is a simple customization of the standard **xaringan** theme. Colors are inspired by [Hinata Hyūga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)<sup>1</sup> that is my favourite [Naruto's](https://en.wikipedia.org/wiki/Naruto) character.
 
-```{r, fig.align='center', out.width="50%", echo=FALSE}
+```{r, fig.align='center', out.width="40%", echo=FALSE}
 knitr::include_graphics("img/hinata.png")
 ```
 
-.footnote[[1] Image Credit: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
+.footnote[[1] Image Credits: [https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga](https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga)]
 
 ---
 
-class: inverse, center, middle
+class: section, center, middle
 
 # Some Hinata Customization
 
@@ -50,25 +51,96 @@ class: inverse, center, middle
 
 ### Header 3
 
-This is some inline code `set.seed(10)` and this is a **codeblock**:
+</br>
+</br>
 
-```{r pressure, echo=FALSE, fig.width=100}
+# Title Slide
+
+There is a `title-slide` CSS class that create the **first slide** of this presentation. The *Hinata* picture can be substituted or deleted inside the `css` file.
+
+# Final Slide
+
+There is also a `final-slide` CSS class that create the last slide with some hex logos.
+
+---
+
+# Code Blocks
+
+This is some inline code `set.seed(10)` and this is a **plot**:
+
+```{r pressure, echo=FALSE, fig.align='center'}
 plot(pressure)
-```
-
-You can also highlight some code using `*` before the code line:
-
-```{r}
-set.seed(10)
-{{print("hello world")}}
 ```
 
 ---
 
-# Custom CSS Classes
+# Some Tips
 
-You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
 
-There is a **final-slide** class for the last slide of the presentation
+.pull-left[
+An example using a leading `*`:
 
-There is a **section** class for slide diveder between presentation sections (like the second slide)
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+````
+`r ''````{r tidy=FALSE}
+if (TRUE) {
+*{{ message("Very important!") }}
+}
+```
+````
+Output:
+```{r tidy=FALSE}
+if (TRUE) {
+{{ message("Very important!") }}
+}
+```
+
+It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+]
+
+---
+
+# Text Customization
+
+* You can make some text **bold** using standard markdown or you can use `.important[some text]` for .important[emphasizing some text].
+* You can also write in .blue[blue] using the `.blue[some text]` class
+
+* This is a link [Google](https://www.google.com/)
+
+## Text Size
+
+* You can use `.small[text]` for .small[text], `.large[text]` for .large[text] and finally `.huge[text]` for .huge[text]
+
+---
+class: center, middle, final-slide
+
+# Thanks 😄
+
+</br>
+</br>
+.large[[**hinata.hyūga@konoha.com**](mailto:hinata.hyūga@konoha.com)]
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
