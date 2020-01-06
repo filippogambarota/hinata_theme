@@ -152,7 +152,7 @@ h3 {
 }
 
 body {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 /* section Slide */
@@ -232,7 +232,7 @@ code.hljs.remark-code {
 }
 
 code.remark-inline-code {
-  padding: 3px;
+  padding: normal;
   color: rgb(32, 32, 32);
   background: #e2e2e267;
   border: 0.5px solid rgba(160, 160, 160, 0.534);
@@ -245,5 +245,5 @@ code.remark-inline-code {
 }
 
 li {
-  line-height: 35px;
+  line-height: 30px;
 }
