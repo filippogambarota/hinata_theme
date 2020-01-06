@@ -81,36 +81,86 @@ td {
   }
 }
 
+/* Title Slide */
+
+.title-slide {
+  background-image: url("../img/hinata.png");
+  background-size: 150px;
+  background-position: 10% 20%;
+  background-color: rgb(230, 230, 230);
+  color: #000000;
+  text-shadow: none;
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: rgb(50, 53, 85);
+  padding-top: 200px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: middle;
+  text-shadow: none;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+/* Title H2 fonts */
+.title-slide h2 {
+  color: #9b0014;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: middle;
+  text-shadow: none;
+  padding-top: 50px;
+  margin-top: 0px;
+}
+
+/* Title H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #9b0014;
+  text-align: middle;
+  text-shadow: none;
+  padding-top: 0px;
+}
+
+/* Title H4 fonts */
+.title-slide h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #515151;
+  font-weight: 500;
+  text-align: middle;
+  text-shadow: none;
+  padding-top: 0px;
+}
+
 /* Standard Slides */
 
 h1, h2, h3 {
   color: rgb(100, 105, 165);
 }
 
-/* Inverse Slide */
+body{
+  line-height: 25px;
+}
 
-.inverse {
+/* section Slide */
+
+.section {
   background-color: rgb(50, 53, 85);
   color: #ffffff;
   text-shadow: 0 0 10px #333;
 }
 
-.inverse h1,
-.inverse h2,
-.inverse h3 {
-  color: #e9e9e9;
+.section h1,
+.section h2,
+.section h3 {
+  color: rgb(230, 230, 230);
 }
 
-/* Title Slide */
-
-.title-slide{
-  background-image: url("../img/hinata.png");
-  background-size: 150px;
-  background-position: 10% 20%;
-  background-color: rgb(207, 203, 202);
-  color: #000000;
-  text-shadow: none;
-}
+/* Final Slide */
 
 .final-slide{
   background-image: url("../img/final_logo.svg");
@@ -125,91 +175,59 @@ h1, h2, h3 {
   color: #f3f3f3;
 }
 
-/* H1 fonts */
-.title-slide h1 {
-  color: #515151;
-  padding-top: 200px;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: middle;
-  text-shadow: none;
-  padding-bottom: 18px;
-  margin-bottom: 18px;
-}
-
-/* H2 fonts */
-.title-slide h2 {
-  color: #9b0014;
-  font-size: 35px;
-  font-weight: 500;
-  text-align: middle;
-  text-shadow: none;
-  padding-top: 50px;
-  margin-top: 0px;
-}
-
-/* H3 fonts */
-.title-slide h3 {
-  font-size: 28px;
-  font-weight: normal;
-  color: #9b0014;
-  text-align: middle;
-  text-shadow: none;
-  padding-top: 0px;
-}
-
-/* H4 fonts */
-.title-slide h4 {
-  font-size: 18px;
-  font-weight: normal;
-  color: #515151;
-  font-weight: 500;
-  text-align: middle;
-  text-shadow: none;
-  padding-top: 0px;
-}
-
-/* Custom Class for Text */
+/* Custom Classes for Text */
 
 .important{
-  color: #9b0014;
+  color: #da0622;
   font-weight: bold;
 }
 
-body{
-  line-height: 35px;
+.blue{
+  color: rgb(36, 36, 207);
+  font-weight: bold;
 }
 
-.remark-code{
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 0.5px solid rgba(160, 160, 160, 0.534);
-  border-radius: 3px;
-  font-size: 16px;
+.large {
+  font-size: 130%
+}
+.small { 
+  font-size: 70% 
 }
 
-.remark-code{
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 0.5px solid rgba(160, 160, 160, 0.534);
-  border-radius: 3px;
-  font-size: 16px;
+.huge {
+  font-size: 200%
 }
 
-.remark-inline-code{
-  margin: 0 2px;
-  padding: 3px 3px 3px 3px;
-  white-space: nowrap;
-  border: 0.5px solid rgba(160, 160, 160, 0.534);
-  background-color: rgba(238, 238, 238, 0.336);
-  border-radius: 3px;
-  font-size: 16px;
-  color: rgb(0, 0, 0)
-}
-
-/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+/* Thanks to Metropolis Theme for the snippet https://github.com/gnab/remark/issues/298 */
 .title-slide .remark-slide-number {
   display: none;
+}
+
+/* Code Blocks Background */
+/* Thanks to issue #242 https://github.com/yihui/xaringan/issues/242 */
+
+code.remark-code, code.hljs.remark-code {
+  font-size: medium;
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: rgb(32, 32, 32);
+  background: #dbdbdb67;
+  border: 0.5px solid rgba(160, 160, 160, 0.534);
+}
+
+code.remark-inline-code{
+  padding: 3px;
+  color: rgb(32, 32, 32);
+  background: #e2e2e267;
+  border: 0.5px solid rgba(160, 160, 160, 0.534);
+  font-size: medium;
+}
+
+.remark-code-line{
+  line-height: 20px;
+}
+
+li{
+  line-height: 35px;
 }
